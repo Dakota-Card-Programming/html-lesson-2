@@ -1,37 +1,53 @@
-Semantic HTML
-This website is intended to help inform interested parties about the importance of semantic HTML.
+<!DOCTYPE html>  <!-- what type of document we are working with -->
+<html lang="en"> <!-- all HTML gets written between these tags -->
+<head>           <!-- describes certain things about our document -->
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- automatically adjusts to devices scale -->
+    <title>My first semantic HTML page</title> <!-- title shows up on the tab above -->
+</head>
+<body> <!-- all the content that gets displayed on the website -->
+    <header> <!-- the stuff at the top of the website-->
+        <h1>Semantic HTML</h1> <!-- main title of the page (only allowed 1 h1 per page)-->
+        <p>This website is intended to help inform interested parties about the importance of semantic HTML.</p>
+    </header>
+    <main> <!-- all the main content on the website -->
+        <section> <!-- section of website, should be all related content -->
+            <h2>Why is it important?</h2>
+            <p>Semantic HTML provides many benefits to people, devices, and software reading our HTML documents, and how they're able to comprehend them.</p>
 
-Why is it important?
-    Semantic HTML provides many benefits to people, devices, and software reading our HTML documents, and how they're able to comprehend them.
-    How to apply Semantic HTML to a document
-    1.	Start by pasting just the text of the content into the body of a new HTML document
-    2.	Determine the major components of your content
-        o	Main Header - What is your heading content?
-        o	Main - What is the main content?
-    3.	Once you determined the major components, determine if there are any sub-components
-    4.	Now that you have your sub components, review your content and see if any further semantic tweaking could help refine your content and provide more meaning
+            <h3>How to apply Semantic HTML to a document</h3>
+            <ol> <!-- ordered list, displayed content in order-->
+                <li> <!-- list item, always used for lists -->
+                    Start by pasting just the text of the content into the body of a new HTML document
+                </li>
 
-How does it help accessibility?
-    Structural, semantic HTML is the key starting point toward good accessibility practices.
-    When a screen reader, or any sort of assistive device scans a web page, it gets information about the Document Object Model (DOM), or the HTML structure of the page. No styles or JavaScript will be read by a screen reader.
+                <li>
+                    <p>Determine the major components of your content</p>
+                    <ul> <!-- unordered list-->
+                        <li>Main Header - What is your heading content?</li>
+                        <li>Main - What is the main content?</li>
+                    </ul>
+                </li>
 
-    An excerpt from the Web Accessibility Guidelines v1.0 website. Semantic HTML
-    [http://web-accessibility.carnegiemuseums.org/foundations/semantic/#:~:text=Structural%2C%20semantic%20HTML%20is%20the,read%20by%20a%20screen%20reader.](Semantic HTML)
+                <li>
+                    Once you determined the major components, determine if there are any sub-components
+                </li>
+            </ol> 
+        </section>
 
--------------------------------------------------------------------------------------------------
-
-Structured HTML and Semantic HTML Fall Hand-in-Hand
-Structured HTML is the practice of formatting the HTML in the correct order of intended digestion. This means, that the content is organized in the order it was expected to be read.
-
--------------------------------------------------------------------------------------------------
-
-Â©2022 - Shaun McKinnon
-
--------------------------------------------------------------------------------------------------
-
-Contact Shaun McKinnon
-Shaun McKinnon
-shaun.mckinnon@georgiancollegea.ca
-1 (705) 555-5555 1 Georgian Dr
-Barrie, Ontario
-L4M 3X9
+        <section> <!-- section of website, should be all related content -->
+            <h2>How does it help accessibility?</h2>
+            <p>Structural, semantic HTML is the key starting point toward good accessibility practices.
+                When a screen reader, or any sort of assistive device scans a web page, it gets information about the Document Object Model (DOM), or the HTML structure of the page. No styles or JavaScript will be read by a screen reader.</p>
+        </section>
+    </main>
+    <aside> <!-- not too relevant contain but should still be displayed -->
+        <h2>Structured HTML and Semantic HTML Fall Hand-in-Hand</h2>
+        <p>Structured HTML is the practice of formatting the HTML in the correct order of intended digestion. This means, that the content is organized in the order it was expected to be read.</p>
+    </aside>
+    <footer> <!-- the bottom of the page, not important content-->
+        <p>&copy;2022 - Dakota Card</p>
+    </footer>
+</body>
+</html>
